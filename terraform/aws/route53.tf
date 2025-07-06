@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "valentine" {
-  name = "valentine.cds-snc.ca"
+  name = var.domain
 
   tags = {
     "CostCentre" = var.billing_code

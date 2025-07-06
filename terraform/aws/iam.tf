@@ -18,6 +18,11 @@ data "aws_iam_policy_document" "valentine_secrets_manager" {
     resources = [
       aws_ssm_parameter.azure_openai_endpoint.arn,
       aws_ssm_parameter.azure_openai_key.arn,
+      aws_ssm_parameter.cognito_domain.arn,
+      aws_ssm_parameter.cognito_client_id.arn,
+      aws_ssm_parameter.cognito_client_secret.arn,
+      aws_ssm_parameter.cognito_user_pool_id.arn,
+      aws_ssm_parameter.cognito_aws_region.arn,
       aws_ssm_parameter.database_url.arn,
       aws_ssm_parameter.google_client_id.arn,
       aws_ssm_parameter.google_client_secret.arn,
