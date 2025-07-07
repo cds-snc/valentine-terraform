@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "github.com/cds-snc/terraform-modules//vpc?ref=v6.1.5"
+  source = "github.com/cds-snc/terraform-modules//vpc?ref=v10.6.2"
   name   = "Valentine_VPC"
 
   allow_https_request_in           = true
@@ -7,8 +7,8 @@ module "vpc" {
   allow_https_request_out          = true
   allow_https_request_out_response = true
 
-  high_availability = true
-
+  cidrsubnet_newbits = 8
+  availability_zones = 3
   single_nat_gateway = true
 
   billing_tag_value = var.billing_code
