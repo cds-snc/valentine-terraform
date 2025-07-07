@@ -40,6 +40,7 @@
                 "name": "AZURE_OPENAI_KEY",
                 "valueFrom": "${AZURE_OPENAI_KEY}"
             },
+            %{ if CREATE_COGNITO_USER_POOL == "true" }
             {
                 "name": "COGNITO_DOMAIN",
                 "valueFrom": "${COGNITO_DOMAIN}"
@@ -60,10 +61,12 @@
                 "name": "COGNITO_AWS_REGION",
                 "valueFrom": "${COGNITO_AWS_REGION}"
             },
+            %{ endif }
             {
                 "name": "DATABASE_URL",
                 "valueFrom": "${DATABASE_URL}"
             },
+            %{ if CREATE_GOOGLE_AUTH == "true" }
             {
                 "name": "GOOGLE_CLIENT_ID",
                 "valueFrom": "${GOOGLE_CLIENT_ID}"
@@ -72,6 +75,7 @@
                 "name": "GOOGLE_CLIENT_SECRET",
                 "valueFrom": "${GOOGLE_CLIENT_SECRET}"
             },
+            %{ endif }
             {
                 "name": "SECRET_KEY_BASE",
                 "valueFrom": "${SECRET_KEY_BASE}"

@@ -14,6 +14,7 @@ inputs = {
   billing_code             = local.billing_code
   create_cognito_user_pool = false
   create_gh_oidc_roles     = false
+  create_google_auth       = true
   domain                   = "valentine.cds-snc.ca"
   region                   = local.region
 }

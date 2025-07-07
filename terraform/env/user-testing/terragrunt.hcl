@@ -14,6 +14,7 @@ inputs = {
   billing_code             = local.billing_code
   create_cognito_user_pool = true
   create_gh_oidc_roles     = true
+  create_google_auth       = false
   domain                   = "valentine-dev.cdssandbox.xyz"
   region                   = local.region
 }
