@@ -10,13 +10,14 @@ locals {
 # DO NOT CHANGE ANYTHING BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING
 
 inputs = {
-  account_id               = "975050085632"
-  billing_code             = local.billing_code
-  create_cognito_user_pool = true
-  create_gh_oidc_roles     = true
-  create_google_auth       = false
-  domain                   = "valentine-dev.cdssandbox.xyz"
-  region                   = local.region
+  account_id                            = "975050085632"
+  billing_code                          = local.billing_code
+  create_cognito_user_pool              = true
+  create_gh_oidc_ecs_service_role       = true
+  create_gh_oidc_terraform_release_role = false
+  create_google_auth                    = false
+  domain                                = "valentine-dev.cdssandbox.xyz"
+  region                                = local.region
 }
 
 remote_state {

@@ -25,8 +25,13 @@ variable "create_cognito_user_pool" {
   type        = bool
 }
 
-variable "create_gh_oidc_roles" {
-  description = "Whether to create GitHub OIDC roles"
+variable "create_gh_oidc_ecs_service_role" {
+  description = "Whether to create GitHub OIDC ECS service role"
+  type        = bool
+}
+
+variable "create_gh_oidc_terraform_release_role" {
+  description = "Whether to create GitHub OIDC Terraform release role"
   type        = bool
 }
 
