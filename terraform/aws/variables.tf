@@ -30,6 +30,11 @@ variable "create_gh_oidc_roles" {
   type        = bool
 }
 
+variable "create_google_auth" {
+  description = "Whether to create Google authentication resources"
+  type        = bool
+}
+
 variable "domain" {
   description = "The domain for the application"
   type        = string
