@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "github.com/cds-snc/terraform-modules//vpc?ref=v6.1.5"
+  source = "github.com/cds-snc/terraform-modules//vpc?ref=v10.6.2"
   name   = "Valentine_VPC"
 
   allow_https_request_in           = true
