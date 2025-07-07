@@ -7,8 +7,8 @@ module "vpc" {
   allow_https_request_out          = true
   allow_https_request_out_response = true
 
-  high_availability = true
-
+  cidrsubnet_newbits = 8
+  availability_zones = 3
   single_nat_gateway = true
 
   billing_tag_value = var.billing_code
