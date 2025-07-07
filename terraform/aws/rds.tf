@@ -5,7 +5,7 @@ resource "random_password" "db" {
 }
 
 module "rds_cluster" {
-  source = "github.com/cds-snc/terraform-modules//rds?ref=v9.6.1"
+  source = "github.com/cds-snc/terraform-modules//rds?ref=v9.6.8"
   name   = "valentine"
 
   database_name  = "valentine"
