@@ -65,6 +65,14 @@
                 "valueFrom": "${DATABASE_URL}"
             },
             {
+                "name": "GOOGLE_CLIENT_ID",
+                "valueFrom": "${GOOGLE_CLIENT_ID}"
+            },
+            {
+                "name": "GOOGLE_CLIENT_SECRET",
+                "valueFrom": "${GOOGLE_CLIENT_SECRET}"
+            },
+            {
                 "name": "SECRET_KEY_BASE",
                 "valueFrom": "${SECRET_KEY_BASE}"
             }

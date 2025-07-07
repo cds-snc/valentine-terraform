@@ -4,6 +4,7 @@ resource "aws_security_group" "valentine_load_balancer" {
   vpc_id      = module.vpc.vpc_id
 
   ingress {
+    description = "Allow inbound traffic from the internet on port 443"
     protocol    = "tcp"
     from_port   = 443
     to_port     = 443
@@ -11,6 +12,7 @@ resource "aws_security_group" "valentine_load_balancer" {
   }
 
   egress {
+    description = "Allow outbound traffic to the ECS task"
     protocol    = "tcp"
     from_port   = 4000
     to_port     = 4000
@@ -29,6 +31,7 @@ resource "aws_security_group" "ecs_tasks" {
   vpc_id      = module.vpc.vpc_id
 
   ingress {
+    description = "Allow inbound traffic from the load balancer"
     protocol    = "tcp"
     from_port   = 4000
     to_port     = 4000
@@ -36,6 +39,7 @@ resource "aws_security_group" "ecs_tasks" {
   }
 
   egress {
+    description = "Allow outbound traffic to the internet"
     protocol    = "-1"
     from_port   = 0
     to_port     = 0

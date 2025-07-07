@@ -12,12 +12,12 @@ data "template_file" "valentine" {
 
   vars = {
     awslogs-group         = aws_cloudwatch_log_group.valentine_group.name
-    awslogs-region        = "ca-central-1"
+    awslogs-region        = var.region
     awslogs-stream-prefix = "ecs-valentine"
     image                 = "public.ecr.aws/cds-snc/valentine:latest"
     fargate_cpu           = var.fargate_cpu
     fargate_memory        = var.fargate_memory
-    aws_region            = "ca-central-1"
+    aws_region            = var.region
     AZURE_OPENAI_ENDPOINT = aws_ssm_parameter.azure_openai_endpoint.arn
     AZURE_OPENAI_KEY      = aws_ssm_parameter.azure_openai_key.arn
     COGNITO_DOMAIN        = aws_ssm_parameter.cognito_domain.arn
@@ -26,6 +26,8 @@ data "template_file" "valentine" {
     COGNITO_USER_POOL_ID  = aws_ssm_parameter.cognito_user_pool_id.arn
     COGNITO_AWS_REGION    = aws_ssm_parameter.cognito_aws_region.arn
     DATABASE_URL          = aws_ssm_parameter.database_url.arn
+    GOOGLE_CLIENT_ID      = aws_ssm_parameter.google_client_id.arn
+    GOOGLE_CLIENT_SECRET  = aws_ssm_parameter.google_client_secret.arn
     PHX_HOST              = aws_acm_certificate.valentine.domain_name
     SECRET_KEY_BASE       = aws_ssm_parameter.secret_key_base.arn
   }

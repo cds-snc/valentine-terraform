@@ -1,15 +1,21 @@
 terraform {
-  source = "."
+  source = "../..//aws"
 }
 
 locals {
   billing_code = "valentine"
+  region       = "ca-central-1"
 }
 
 # DO NOT CHANGE ANYTHING BELOW HERE UNLESS YOU KNOW WHAT YOU ARE DOING
 
 inputs = {
-  billing_code = local.billing_code
+  account_id               = "686255955988"
+  billing_code             = local.billing_code
+  create_cognito_user_pool = false
+  create_gh_oidc_roles     = false
+  domain                   = "valentine.cds-snc.ca"
+  region                   = local.region
 }
 
 remote_state {
@@ -22,8 +28,8 @@ remote_state {
     encrypt             = true
     bucket              = "${local.billing_code}-tf"
     dynamodb_table      = "terraform-state-lock-dynamo"
-    region              = "ca-central-1"
-    key                 = "${path_relative_to_include()}/terraform.tfstate"
+    region              = local.region
+    key                 = "./terraform.tfstate"
     s3_bucket_tags      = { CostCenter : local.billing_code }
     dynamodb_table_tags = { CostCenter : local.billing_code }
   }
