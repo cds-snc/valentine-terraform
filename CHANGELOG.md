@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/cds-snc/valentine-terraform/compare/v1.1.1...v1.1.2) (2025-07-07)
+
+
+### Miscellaneous Chores
+
+* remove `moved` blocks ([#15](https://github.com/cds-snc/valentine-terraform/issues/15)) ([4e501b3](https://github.com/cds-snc/valentine-terraform/commit/4e501b36ac6a72e854d438acb1a9af9ebc5c6e08))
+
 ## [1.1.1](https://github.com/cds-snc/valentine-terraform/compare/v1.1.0...v1.1.1) (2025-07-07)
 
 
