@@ -133,38 +133,3 @@ resource "aws_ssm_parameter" "secret_key_base" {
     Terraform  = true
   }
 }
-
-moved {
-  from = aws_ssm_parameter.cognito_aws_region
-  to   = aws_ssm_parameter.cognito_aws_region[0]
-}
-
-moved {
-  from = aws_ssm_parameter.cognito_client_id
-  to   = aws_ssm_parameter.cognito_client_id[0]
-}
-
-moved {
-  from = aws_ssm_parameter.cognito_client_secret
-  to   = aws_ssm_parameter.cognito_client_secret[0]
-}
-
-moved {
-  from = aws_ssm_parameter.cognito_domain
-  to   = aws_ssm_parameter.cognito_domain[0]
-}
-
-moved {
-  from = aws_ssm_parameter.cognito_user_pool_id
-  to   = aws_ssm_parameter.cognito_user_pool_id[0]
-}
-
-moved {
-  from = aws_ssm_parameter.google_client_id
-  to   = aws_ssm_parameter.google_client_id[0]
-}
-
-moved {
-  from = aws_ssm_parameter.google_client_secret
-  to   = aws_ssm_parameter.google_client_secret[0]
-}

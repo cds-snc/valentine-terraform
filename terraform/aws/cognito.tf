@@ -28,18 +28,3 @@ resource "aws_cognito_user_pool_domain" "domain" {
   domain       = "valentine-auth"
   user_pool_id = aws_cognito_user_pool.valentine_user_pool[0].id
 }
-
-moved {
-  from = aws_cognito_user_pool.valentine_user_pool
-  to   = aws_cognito_user_pool.valentine_user_pool[0]
-}
-
-moved {
-  from = aws_cognito_user_pool_client.client
-  to   = aws_cognito_user_pool_client.client[0]
-}
-
-moved {
-  from = aws_cognito_user_pool_domain.domain
-  to   = aws_cognito_user_pool_domain.domain[0]
-}
