@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/cds-snc/valentine-terraform/compare/v1.1.2...v1.1.3) (2025-07-21)
+
+
+### Miscellaneous Chores
+
+* **deps:** update mcr.microsoft.com/devcontainers/base:bullseye docker digest to 5d19b08 ([#4](https://github.com/cds-snc/valentine-terraform/issues/4)) ([fa0c8ef](https://github.com/cds-snc/valentine-terraform/commit/fa0c8ef46d0b679d5a26345a2a5a17d80b282a02))
+
 ## [1.1.2](https://github.com/cds-snc/valentine-terraform/compare/v1.1.1...v1.1.2) (2025-07-07)
 
 
