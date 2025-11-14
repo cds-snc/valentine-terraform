@@ -9,7 +9,7 @@ locals {
 module "gh_oidc_roles" {
   count = var.create_gh_oidc_ecs_service_role ? 1 : 0
 
-  source   = "github.com/cds-snc/terraform-modules//gh_oidc_role?ref=v10.8.2"
+  source   = "github.com/cds-snc/terraform-modules//gh_oidc_role?ref=v10.8.6"
   org_name = "canada-ca"
   roles = [
     {
@@ -56,7 +56,7 @@ resource "aws_iam_role_policy_attachment" "cluster_restart_attachment" {
 module "gh_oidc_terraform_release" {
   count = var.create_gh_oidc_terraform_release_role ? 1 : 0
 
-  source   = "github.com/cds-snc/terraform-modules//gh_oidc_role?ref=v10.8.2"
+  source   = "github.com/cds-snc/terraform-modules//gh_oidc_role?ref=v10.8.6"
   org_name = "cds-snc"
   roles = [
     {
