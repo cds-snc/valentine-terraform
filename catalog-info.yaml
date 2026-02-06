@@ -2,10 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: valentine-terraform
-  description: Terraform to deploy the Valentine threat modeling application
-  labels:
-    license: MIT
+  title: Valentine Terraform
+  description: Terraform to deploy the Valentine threat modelling application.
+  annotations:
+    github.com/project-slug: cds-snc/valentine-terraform
+    backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
-  lifecycle: experimental
-  owner: cds-snc
+  type: service
+  lifecycle: production
+  owner: group:cds-snc/security
+  domain: security
+
