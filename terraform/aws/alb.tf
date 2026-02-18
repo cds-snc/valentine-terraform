@@ -58,3 +58,34 @@ resource "aws_lb" "valentine" {
     "CostCentre" = var.billing_code
   }
 }
+
+# Serve security.txt as a fixed response from the ALB
+resource "aws_alb_listener_rule" "security_txt" {
+  listener_arn = aws_lb_listener.valentine_listener.arn
+  priority     = 1
+
+  action {
+    type = "fixed-response"
+
+    fixed_response {
+      content_type = "text/plain"
+      message_body = <<-EOT
+        Contact: mailto:ZZTBSCYBERS@tbs-sct.gc.ca
+        Contact: https://hackerone.com/tbs-sct/
+        Canonical: https://${replace(var.domain, "/^[^.]+\\./", "")}/.well-known/security.txt
+        Expires: 2026-03-02T12:00:00.000Z
+        Preferred-Languages: en, fr
+      EOT
+      status_code  = "200"
+    }
+  }
+
+  condition {
+    path_pattern {
+      values = ["/.well-known/security.txt"]
+    }
+  }
+  tags = {
+    "CostCentre" = var.billing_code
+  }
+}
