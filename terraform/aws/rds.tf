@@ -10,7 +10,7 @@ module "rds_cluster" {
 
   database_name  = "valentine"
   engine         = "aurora-postgresql"
-  engine_version = "14.15"
+  engine_version = "14.17"
   instance_class = "db.t3.medium"
   instances      = 1
   username       = "valentine"
