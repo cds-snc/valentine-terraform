@@ -1,6 +1,6 @@
 {
 	"name": "valentine-terraform",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye@sha256:b387f798b9ee97144a126ba55ed92c8f2d3a8deceb8fe15e450645b307fee22a",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye@sha256:fb17cc95abb5489d81d129c8e5f58c7c1985d009397f2718a7d1d4c26f94b302",
 	"containerEnv": {
 		"SHELL": "/bin/zsh"
 	},
