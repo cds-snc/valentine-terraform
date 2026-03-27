@@ -10,9 +10,9 @@ resource "aws_lb_target_group" "valentine" {
     enabled             = true
     interval            = 10
     path                = "/"
-    timeout             = 30
-    healthy_threshold   = 3
-    unhealthy_threshold = 3
+    timeout             = 5
+    healthy_threshold   = 4
+    unhealthy_threshold = 4
   }
 
   tags = {
