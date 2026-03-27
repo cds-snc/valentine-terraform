@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.4](https://github.com/cds-snc/valentine-terraform/compare/v1.1.3...v1.1.4) (2026-03-27)
+
+
+### Bug Fixes
+
+* adjust healthcheck values as they were invalid ([#32](https://github.com/cds-snc/valentine-terraform/issues/32)) ([2b5a6a4](https://github.com/cds-snc/valentine-terraform/commit/2b5a6a40eebd93bd074928bacbc7335824e4b72f))
+* increase ALB target group health check timeout ([#30](https://github.com/cds-snc/valentine-terraform/issues/30)) ([5087e83](https://github.com/cds-snc/valentine-terraform/commit/5087e83c43fbd6cf53b936ea2a001e534d661d55))
+
+
+### Miscellaneous Chores
+
+* **deps:** update mcr.microsoft.com/devcontainers/base:bullseye docker digest to c4a714f ([#22](https://github.com/cds-snc/valentine-terraform/issues/22)) ([5b1a139](https://github.com/cds-snc/valentine-terraform/commit/5b1a1390010d2458e8333ceada566d189be81989))
+* **deps:** update terraform github.com/cds-snc/terraform-modules to v10.11.0 ([#26](https://github.com/cds-snc/valentine-terraform/issues/26)) ([3e10379](https://github.com/cds-snc/valentine-terraform/commit/3e1037957383ea249f73b767c5796c34b38a0735))
+
 ## [1.1.3](https://github.com/cds-snc/valentine-terraform/compare/v1.1.2...v1.1.3) (2026-02-19)
 
 
