@@ -8,9 +8,9 @@ resource "aws_lb_target_group" "valentine" {
 
   health_check {
     enabled             = true
-    interval            = 10
+    interval            = 20
     path                = "/"
-    timeout             = 5
+    timeout             = 10
     healthy_threshold   = 4
     unhealthy_threshold = 4
   }
