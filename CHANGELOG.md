@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/cds-snc/valentine-terraform/compare/v1.1.4...v1.1.5) (2026-03-27)
+
+
+### Bug Fixes
+
+* increase interval and timeout values of health check ([#33](https://github.com/cds-snc/valentine-terraform/issues/33)) ([2c2c349](https://github.com/cds-snc/valentine-terraform/commit/2c2c349e8b167d21e0c62607e5dd4a5d6722cbd9))
+
 ## [1.1.4](https://github.com/cds-snc/valentine-terraform/compare/v1.1.3...v1.1.4) (2026-03-27)
 
 
