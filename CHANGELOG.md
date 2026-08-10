@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/cds-snc/valentine-terraform/compare/v1.1.5...v1.2.0) (2026-08-10)
+
+
+### Features
+
+* add dedicated guardian key ([#38](https://github.com/cds-snc/valentine-terraform/issues/38)) ([28aa656](https://github.com/cds-snc/valentine-terraform/commit/28aa6569fe089fe3c6504469034b4c9e5390af56))
+
+
+### Bug Fixes
+
+* sync db versions ([#40](https://github.com/cds-snc/valentine-terraform/issues/40)) ([a7777f3](https://github.com/cds-snc/valentine-terraform/commit/a7777f36c4c7444651256821c4cb03f9880e6f93))
+
 ## [1.1.5](https://github.com/cds-snc/valentine-terraform/compare/v1.1.4...v1.1.5) (2026-03-27)
 
 
