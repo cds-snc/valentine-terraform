@@ -14,6 +14,7 @@ env:
   TF_INPUT: false
   TF_VAR_azure_openai_endpoint: ${{ secrets.USER_TESTING_AZURE_OPENAI_ENDPOINT }}
   TF_VAR_azure_openai_key: ${{ secrets.USER_TESTING_AZURE_OPENAI_KEY }}
+  TF_VAR_guardian_secret_key: ${{ secrets.USER_TESTING_GUARDIAN_SECRET_KEY }}
   TF_VAR_secret_key_base: ${{ secrets.USER_TESTING_SECRET_KEY_BASE }}
 
 permissions:

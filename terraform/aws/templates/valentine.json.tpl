@@ -77,6 +77,10 @@
             },
             %{ endif }
             {
+                "name": "GUARDIAN_SECRET_KEY",
+                "valueFrom": "${GUARDIAN_SECRET_KEY}"
+            },
+            {
                 "name": "SECRET_KEY_BASE",
                 "valueFrom": "${SECRET_KEY_BASE}"
             }

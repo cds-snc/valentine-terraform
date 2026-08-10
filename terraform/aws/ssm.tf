@@ -123,6 +123,17 @@ resource "aws_ssm_parameter" "google_client_secret" {
   }
 }
 
+resource "aws_ssm_parameter" "guardian_secret_key" {
+  name  = "guardian_secret_key"
+  type  = "SecureString"
+  value = var.guardian_secret_key
+
+  tags = {
+    CostCentre = var.billing_code
+    Terraform  = true
+  }
+}
+
 resource "aws_ssm_parameter" "secret_key_base" {
   name  = "secret_key_base"
   type  = "SecureString"
