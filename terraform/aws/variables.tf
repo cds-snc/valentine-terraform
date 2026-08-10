@@ -69,6 +69,12 @@ variable "google_client_secret" {
   sensitive   = true
 }
 
+variable "guardian_secret_key" {
+  description = "(Required) The Guardian secret key for the application"
+  type        = string
+  sensitive   = true
+}
+
 variable "region" {
   description = "The AWS region to deploy resources in"
   type        = string

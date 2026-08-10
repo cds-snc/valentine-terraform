@@ -14,6 +14,7 @@ env:
   TF_VAR_azure_openai_key: ${{ secrets.PRODUCTION_AZURE_OPENAI_KEY }}
   TF_VAR_google_client_id: ${{ secrets.PRODUCTION_GOOGLE_CLIENT_ID }}
   TF_VAR_google_client_secret: ${{ secrets.PRODUCTION_GOOGLE_CLIENT_SECRET }}
+  TF_VAR_guardian_secret_key: ${{ secrets.PRODUCTION_GUARDIAN_SECRET_KEY }}
   TF_VAR_secret_key_base: ${{ secrets.PRODUCTION_SECRET_KEY_BASE }}
 
 permissions:

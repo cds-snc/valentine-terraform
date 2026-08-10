@@ -30,6 +30,7 @@ data "template_file" "valentine" {
     DATABASE_URL             = aws_ssm_parameter.database_url.arn
     GOOGLE_CLIENT_ID         = var.create_google_auth ? aws_ssm_parameter.google_client_id[0].arn : ""
     GOOGLE_CLIENT_SECRET     = var.create_google_auth ? aws_ssm_parameter.google_client_secret[0].arn : ""
+    GUARDIAN_SECRET_KEY      = aws_ssm_parameter.guardian_secret_key.arn
     PHX_HOST                 = aws_acm_certificate.valentine.domain_name
     SECRET_KEY_BASE          = aws_ssm_parameter.secret_key_base.arn
   }

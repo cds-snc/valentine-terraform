@@ -20,6 +20,7 @@ data "aws_iam_policy_document" "valentine_secrets_manager" {
         aws_ssm_parameter.azure_openai_endpoint.arn,
         aws_ssm_parameter.azure_openai_key.arn,
         aws_ssm_parameter.database_url.arn,
+        aws_ssm_parameter.guardian_secret_key.arn,
         aws_ssm_parameter.secret_key_base.arn
       ],
       (var.create_cognito_user_pool ?
