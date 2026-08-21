@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/cds-snc/valentine-terraform/compare/v1.2.0...v1.3.0) (2026-08-21)
+
+
+### Features
+
+* add generic LLM env vars ([#41](https://github.com/cds-snc/valentine-terraform/issues/41)) ([24331bc](https://github.com/cds-snc/valentine-terraform/commit/24331bc201f49c066833c3a282d4549bc40bd085))
+
 ## [1.2.0](https://github.com/cds-snc/valentine-terraform/compare/v1.1.5...v1.2.0) (2026-08-10)
 
 
