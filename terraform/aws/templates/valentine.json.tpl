@@ -33,6 +33,14 @@
         ],
         "secrets": [
             {
+                "name": "AI_API_KEY",
+                "valueFrom": "${AI_API_KEY}"
+            },
+            {
+                "name": "AI_BASE_URL",
+                "valueFrom": "${AI_BASE_URL}"
+            },
+            {
                 "name": "AZURE_OPENAI_ENDPOINT",
                 "valueFrom": "${AZURE_OPENAI_ENDPOINT}"
             },

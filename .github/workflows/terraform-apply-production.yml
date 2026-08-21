@@ -10,6 +10,8 @@ env:
   TERRAFORM_VERSION: 1.12.2
   TERRAGRUNT_VERSION: 0.81.7
   TF_INPUT: false
+  TF_VAR_ai_api_key: ${{ secrets.PRODUCTION_AI_API_KEY }}
+  TF_VAR_ai_base_url: ${{ secrets.PRODUCTION_AI_BASE_URL }}
   TF_VAR_azure_openai_endpoint: ${{ secrets.PRODUCTION_AZURE_OPENAI_ENDPOINT }}
   TF_VAR_azure_openai_key: ${{ secrets.PRODUCTION_AZURE_OPENAI_KEY }}
   TF_VAR_google_client_id: ${{ secrets.PRODUCTION_GOOGLE_CLIENT_ID }}
