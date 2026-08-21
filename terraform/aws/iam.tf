@@ -17,6 +17,8 @@ data "aws_iam_policy_document" "valentine_secrets_manager" {
     ]
     resources = concat(
       [
+        aws_ssm_parameter.ai_api_key.arn,
+        aws_ssm_parameter.ai_base_url.arn,
         aws_ssm_parameter.azure_openai_endpoint.arn,
         aws_ssm_parameter.azure_openai_key.arn,
         aws_ssm_parameter.database_url.arn,

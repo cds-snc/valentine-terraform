@@ -3,6 +3,18 @@ variable "account_id" {
   type        = string
 }
 
+variable "ai_api_key" {
+  description = "(Required) The API key for the AI service"
+  type        = string
+  sensitive   = true
+}
+
+variable "ai_base_url" {
+  description = "(Required) The base URL for the AI service"
+  type        = string
+  sensitive   = true
+}
+
 variable "azure_openai_endpoint" {
   description = "(Optional) The Azure OpenAI endpoint"
   type        = string

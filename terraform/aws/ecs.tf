@@ -18,6 +18,8 @@ data "template_file" "valentine" {
     fargate_cpu              = var.fargate_cpu
     fargate_memory           = var.fargate_memory
     aws_region               = var.region
+    AI_API_KEY               = aws_ssm_parameter.ai_api_key.arn
+    AI_BASE_URL              = aws_ssm_parameter.ai_base_url.arn
     AZURE_OPENAI_ENDPOINT    = aws_ssm_parameter.azure_openai_endpoint.arn
     AZURE_OPENAI_KEY         = aws_ssm_parameter.azure_openai_key.arn
     COGNITO_DOMAIN           = var.create_cognito_user_pool ? aws_ssm_parameter.cognito_domain[0].arn : ""

@@ -1,3 +1,25 @@
+resource "aws_ssm_parameter" "ai_api_key" {
+  name  = "ai_api_key"
+  type  = "SecureString"
+  value = var.ai_api_key
+
+  tags = {
+    CostCentre = var.billing_code
+    Terraform  = true
+  }
+}
+
+resource "aws_ssm_parameter" "ai_base_url" {
+  name  = "ai_base_url"
+  type  = "SecureString"
+  value = var.ai_base_url
+
+  tags = {
+    CostCentre = var.billing_code
+    Terraform  = true
+  }
+}
+
 resource "aws_ssm_parameter" "azure_openai_endpoint" {
   name  = "azure_openai_endpoint"
   type  = "SecureString"
