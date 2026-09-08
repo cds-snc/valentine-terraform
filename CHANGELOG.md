@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/cds-snc/valentine-terraform/compare/v1.3.0...v1.3.1) (2026-09-08)
+
+
+### Miscellaneous Chores
+
+* **deps:** update all non-major github action dependencies ([#23](https://github.com/cds-snc/valentine-terraform/issues/23)) ([15fcb52](https://github.com/cds-snc/valentine-terraform/commit/15fcb52c28e0d4d18a5241949c1777f73931b79d))
+
 ## [1.3.0](https://github.com/cds-snc/valentine-terraform/compare/v1.2.0...v1.3.0) (2026-08-21)
 
 
