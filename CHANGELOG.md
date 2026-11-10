@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.1](https://github.com/cds-snc/valentine-terraform/compare/v1.3.0...v1.3.1) (2026-11-10)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([#24](https://github.com/cds-snc/valentine-terraform/issues/24)) ([014e05a](https://github.com/cds-snc/valentine-terraform/commit/014e05a80f38602a7b7d70167bc6791f7bd58449))
+* **deps:** update all non-major github action dependencies ([#23](https://github.com/cds-snc/valentine-terraform/issues/23)) ([15fcb52](https://github.com/cds-snc/valentine-terraform/commit/15fcb52c28e0d4d18a5241949c1777f73931b79d))
+* synced file(s) with cds-snc/site-reliability-engineering ([#44](https://github.com/cds-snc/valentine-terraform/issues/44)) ([12b4070](https://github.com/cds-snc/valentine-terraform/commit/12b407097f76bec9484ada729acd63a86c510552))
+
 ## [1.3.0](https://github.com/cds-snc/valentine-terraform/compare/v1.2.0...v1.3.0) (2026-08-21)
 
 
